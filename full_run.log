@@ -1,0 +1,373 @@
+Scanning PlantVillage raw dir: C:\Users\ACER\PycharmProjects\crop-disease-xai\data\raw\plantvillage\raw\color
+Found 38 classes, 54305 images total
+train=9082 val=1935 test=2010 classes=38
+OOD (PlantDoc) manifest: 2565 images across 28 mapped classes
+
+=== Training custom_cnn ===
+[custom_cnn] epoch 1/20 train_loss=2.3690 train_acc=0.3702 val_loss=1.6950 val_acc=0.5194
+[custom_cnn] epoch 2/20 train_loss=1.5340 train_acc=0.5664 val_loss=1.2952 val_acc=0.6357
+[custom_cnn] epoch 3/20 train_loss=1.1535 train_acc=0.6670 val_loss=0.8911 val_acc=0.7633
+[custom_cnn] epoch 4/20 train_loss=0.9241 train_acc=0.7252 val_loss=0.6982 val_acc=0.8083
+[custom_cnn] epoch 5/20 train_loss=0.7853 train_acc=0.7630 val_loss=0.6415 val_acc=0.8083
+[custom_cnn] epoch 6/20 train_loss=0.6820 train_acc=0.7910 val_loss=0.5688 val_acc=0.8207
+[custom_cnn] epoch 7/20 train_loss=0.6199 train_acc=0.8084 val_loss=0.4487 val_acc=0.8682
+[custom_cnn] epoch 8/20 train_loss=0.5571 train_acc=0.8250 val_loss=0.4501 val_acc=0.8672
+[custom_cnn] epoch 9/20 train_loss=0.4980 train_acc=0.8468 val_loss=0.8256 val_acc=0.7292
+[custom_cnn] epoch 10/20 train_loss=0.4726 train_acc=0.8542 val_loss=0.4801 val_acc=0.8450
+[custom_cnn] epoch 11/20 train_loss=0.4380 train_acc=0.8642 val_loss=0.3862 val_acc=0.8806
+[custom_cnn] epoch 12/20 train_loss=0.4158 train_acc=0.8678 val_loss=0.3096 val_acc=0.9070
+[custom_cnn] epoch 13/20 train_loss=0.4044 train_acc=0.8690 val_loss=0.2882 val_acc=0.9101
+[custom_cnn] epoch 14/20 train_loss=0.3627 train_acc=0.8871 val_loss=0.2434 val_acc=0.9271
+[custom_cnn] epoch 15/20 train_loss=0.3470 train_acc=0.8895 val_loss=0.2717 val_acc=0.9152
+[custom_cnn] epoch 16/20 train_loss=0.3340 train_acc=0.8942 val_loss=0.2730 val_acc=0.9158
+[custom_cnn] epoch 17/20 train_loss=0.3015 train_acc=0.9022 val_loss=0.2952 val_acc=0.9075
+[custom_cnn] epoch 18/20 train_loss=0.3088 train_acc=0.9008 val_loss=0.2756 val_acc=0.9101
+[custom_cnn] early stopping at epoch 18
+=== Evaluating custom_cnn ===
+
+=== Training resnet18 ===
+[resnet18] epoch 1/20 train_loss=0.6590 train_acc=0.8064 val_loss=0.3413 val_acc=0.8848
+[resnet18] epoch 2/20 train_loss=0.3008 train_acc=0.9019 val_loss=0.3193 val_acc=0.8915
+[resnet18] epoch 3/20 train_loss=0.2463 train_acc=0.9193 val_loss=0.2222 val_acc=0.9261
+[resnet18] epoch 4/20 train_loss=0.1866 train_acc=0.9370 val_loss=0.2000 val_acc=0.9375
+[resnet18] epoch 5/20 train_loss=0.1928 train_acc=0.9368 val_loss=0.2418 val_acc=0.9214
+[resnet18] epoch 6/20 train_loss=0.1635 train_acc=0.9452 val_loss=0.2017 val_acc=0.9354
+[resnet18] epoch 7/20 train_loss=0.1589 train_acc=0.9473 val_loss=0.2191 val_acc=0.9266
+[resnet18] epoch 8/20 train_loss=0.1610 train_acc=0.9490 val_loss=0.1524 val_acc=0.9504
+[resnet18] epoch 9/20 train_loss=0.1346 train_acc=0.9563 val_loss=0.1510 val_acc=0.9468
+[resnet18] epoch 10/20 train_loss=0.1242 train_acc=0.9586 val_loss=0.1430 val_acc=0.9494
+[resnet18] epoch 11/20 train_loss=0.1304 train_acc=0.9593 val_loss=0.1615 val_acc=0.9406
+[resnet18] epoch 12/20 train_loss=0.1268 train_acc=0.9554 val_loss=0.1283 val_acc=0.9592
+[resnet18] epoch 13/20 train_loss=0.1212 train_acc=0.9625 val_loss=0.2423 val_acc=0.9240
+[resnet18] epoch 14/20 train_loss=0.1142 train_acc=0.9633 val_loss=0.1830 val_acc=0.9359
+[resnet18] epoch 15/20 train_loss=0.1393 train_acc=0.9545 val_loss=0.1730 val_acc=0.9488
+[resnet18] epoch 16/20 train_loss=0.1057 train_acc=0.9650 val_loss=0.1760 val_acc=0.9463
+[resnet18] early stopping at epoch 16
+=== Evaluating resnet18 ===
+
+=== Training mobilenet_v2 ===
+[mobilenet_v2] epoch 1/20 train_loss=0.6929 train_acc=0.7888 val_loss=0.4569 val_acc=0.8599
+[mobilenet_v2] epoch 2/20 train_loss=0.3594 train_acc=0.8821 val_loss=0.3139 val_acc=0.8982
+[mobilenet_v2] epoch 3/20 train_loss=0.2753 train_acc=0.9067 val_loss=0.3065 val_acc=0.8966
+[mobilenet_v2] epoch 4/20 train_loss=0.2227 train_acc=0.9252 val_loss=0.3153 val_acc=0.8951
+[mobilenet_v2] epoch 5/20 train_loss=0.2350 train_acc=0.9241 val_loss=0.2576 val_acc=0.9137
+[mobilenet_v2] epoch 6/20 train_loss=0.2051 train_acc=0.9304 val_loss=0.2675 val_acc=0.9121
+[mobilenet_v2] epoch 7/20 train_loss=0.1854 train_acc=0.9371 val_loss=0.2089 val_acc=0.9297
+[mobilenet_v2] epoch 8/20 train_loss=0.1612 train_acc=0.9466 val_loss=0.2297 val_acc=0.9307
+[mobilenet_v2] epoch 9/20 train_loss=0.1530 train_acc=0.9462 val_loss=0.1922 val_acc=0.9416
+[mobilenet_v2] epoch 10/20 train_loss=0.1547 train_acc=0.9495 val_loss=0.2384 val_acc=0.9235
+[mobilenet_v2] epoch 11/20 train_loss=0.1514 train_acc=0.9507 val_loss=0.1805 val_acc=0.9411
+[mobilenet_v2] epoch 12/20 train_loss=0.1478 train_acc=0.9505 val_loss=0.2131 val_acc=0.9318
+[mobilenet_v2] epoch 13/20 train_loss=0.1478 train_acc=0.9532 val_loss=0.3453 val_acc=0.8972
+[mobilenet_v2] epoch 14/20 train_loss=0.1374 train_acc=0.9557 val_loss=0.2341 val_acc=0.9339
+[mobilenet_v2] epoch 15/20 train_loss=0.1348 train_acc=0.9550 val_loss=0.2466 val_acc=0.9220
+[mobilenet_v2] early stopping at epoch 15
+=== Evaluating mobilenet_v2 ===
+
+=== Training efficientnet_b0 ===
+[efficientnet_b0] epoch 1/20 train_loss=0.8413 train_acc=0.7677 val_loss=0.3778 val_acc=0.8822
+[efficientnet_b0] epoch 2/20 train_loss=0.3440 train_acc=0.8868 val_loss=0.2865 val_acc=0.9049
+[efficientnet_b0] epoch 3/20 train_loss=0.2751 train_acc=0.9106 val_loss=0.2597 val_acc=0.9096
+[efficientnet_b0] epoch 4/20 train_loss=0.2228 train_acc=0.9301 val_loss=0.2129 val_acc=0.9266
+[efficientnet_b0] epoch 5/20 train_loss=0.1957 train_acc=0.9340 val_loss=0.2165 val_acc=0.9292
+[efficientnet_b0] epoch 6/20 train_loss=0.1815 train_acc=0.9362 val_loss=0.1943 val_acc=0.9339
+[efficientnet_b0] epoch 7/20 train_loss=0.1747 train_acc=0.9429 val_loss=0.1837 val_acc=0.9354
+[efficientnet_b0] epoch 8/20 train_loss=0.1630 train_acc=0.9468 val_loss=0.1911 val_acc=0.9266
+[efficientnet_b0] epoch 9/20 train_loss=0.1371 train_acc=0.9541 val_loss=0.1549 val_acc=0.9457
+[efficientnet_b0] epoch 10/20 train_loss=0.1391 train_acc=0.9533 val_loss=0.1514 val_acc=0.9504
+[efficientnet_b0] epoch 11/20 train_loss=0.1356 train_acc=0.9564 val_loss=0.2007 val_acc=0.9318
+[efficientnet_b0] epoch 12/20 train_loss=0.1341 train_acc=0.9573 val_loss=0.1465 val_acc=0.9499
+[efficientnet_b0] epoch 13/20 train_loss=0.1263 train_acc=0.9563 val_loss=0.1650 val_acc=0.9380
+[efficientnet_b0] epoch 14/20 train_loss=0.1379 train_acc=0.9549 val_loss=0.1479 val_acc=0.9514
+[efficientnet_b0] epoch 15/20 train_loss=0.1213 train_acc=0.9596 val_loss=0.1701 val_acc=0.9370
+[efficientnet_b0] epoch 16/20 train_loss=0.1194 train_acc=0.9631 val_loss=0.1212 val_acc=0.9571
+[efficientnet_b0] epoch 17/20 train_loss=0.1126 train_acc=0.9627 val_loss=0.1242 val_acc=0.9561
+[efficientnet_b0] epoch 18/20 train_loss=0.1081 train_acc=0.9628 val_loss=0.1587 val_acc=0.9463
+[efficientnet_b0] epoch 19/20 train_loss=0.1089 train_acc=0.9609 val_loss=0.1467 val_acc=0.9545
+[efficientnet_b0] epoch 20/20 train_loss=0.1070 train_acc=0.9647 val_loss=0.1727 val_acc=0.9452
+[efficientnet_b0] early stopping at epoch 20
+=== Evaluating efficientnet_b0 ===
+
+=== Training shufflenet_v2 ===
+[shufflenet_v2] epoch 1/20 train_loss=1.6169 train_acc=0.6648 val_loss=0.4239 val_acc=0.8775
+[shufflenet_v2] epoch 2/20 train_loss=0.3626 train_acc=0.8970 val_loss=0.2697 val_acc=0.9142
+[shufflenet_v2] epoch 3/20 train_loss=0.2525 train_acc=0.9242 val_loss=0.2583 val_acc=0.9199
+[shufflenet_v2] epoch 4/20 train_loss=0.2230 train_acc=0.9271 val_loss=0.2064 val_acc=0.9375
+[shufflenet_v2] epoch 5/20 train_loss=0.1948 train_acc=0.9386 val_loss=0.2167 val_acc=0.9297
+[shufflenet_v2] epoch 6/20 train_loss=0.1771 train_acc=0.9420 val_loss=0.1957 val_acc=0.9323
+[shufflenet_v2] epoch 7/20 train_loss=0.1680 train_acc=0.9441 val_loss=0.1943 val_acc=0.9359
+[shufflenet_v2] epoch 8/20 train_loss=0.1600 train_acc=0.9497 val_loss=0.1891 val_acc=0.9344
+[shufflenet_v2] epoch 9/20 train_loss=0.1441 train_acc=0.9517 val_loss=0.1767 val_acc=0.9359
+[shufflenet_v2] epoch 10/20 train_loss=0.1432 train_acc=0.9507 val_loss=0.1763 val_acc=0.9370
+[shufflenet_v2] epoch 11/20 train_loss=0.1420 train_acc=0.9513 val_loss=0.1774 val_acc=0.9426
+[shufflenet_v2] epoch 12/20 train_loss=0.1355 train_acc=0.9552 val_loss=0.1557 val_acc=0.9447
+[shufflenet_v2] epoch 13/20 train_loss=0.1258 train_acc=0.9584 val_loss=0.1570 val_acc=0.9447
+[shufflenet_v2] epoch 14/20 train_loss=0.1309 train_acc=0.9576 val_loss=0.1477 val_acc=0.9504
+[shufflenet_v2] epoch 15/20 train_loss=0.1286 train_acc=0.9582 val_loss=0.1975 val_acc=0.9349
+[shufflenet_v2] epoch 16/20 train_loss=0.1228 train_acc=0.9603 val_loss=0.1894 val_acc=0.9359
+[shufflenet_v2] epoch 17/20 train_loss=0.1189 train_acc=0.9601 val_loss=0.1946 val_acc=0.9333
+[shufflenet_v2] epoch 18/20 train_loss=0.1166 train_acc=0.9615 val_loss=0.1475 val_acc=0.9514
+[shufflenet_v2] epoch 19/20 train_loss=0.1076 train_acc=0.9656 val_loss=0.1971 val_acc=0.9354
+[shufflenet_v2] epoch 20/20 train_loss=0.1165 train_acc=0.9607 val_loss=0.1779 val_acc=0.9395
+=== Evaluating shufflenet_v2 ===
+
+=== Generalization: cross-validation ===
+[custom_cnn_cv0] epoch 1/8 train_loss=2.3707 train_acc=0.3732 val_loss=1.6314 val_acc=0.5526
+[custom_cnn_cv0] epoch 2/8 train_loss=1.5303 train_acc=0.5653 val_loss=1.1702 val_acc=0.6647
+[custom_cnn_cv0] epoch 3/8 train_loss=1.1864 train_acc=0.6565 val_loss=1.0242 val_acc=0.7027
+[custom_cnn_cv0] epoch 4/8 train_loss=0.9692 train_acc=0.7182 val_loss=0.7072 val_acc=0.8070
+[custom_cnn_cv0] epoch 5/8 train_loss=0.8300 train_acc=0.7513 val_loss=0.5863 val_acc=0.8354
+[custom_cnn_cv0] epoch 6/8 train_loss=0.7125 train_acc=0.7848 val_loss=0.5452 val_acc=0.8409
+[custom_cnn_cv0] epoch 7/8 train_loss=0.6218 train_acc=0.8116 val_loss=0.4547 val_acc=0.8678
+[custom_cnn_cv0] epoch 8/8 train_loss=0.5703 train_acc=0.8311 val_loss=0.4247 val_acc=0.8766
+[CV] custom_cnn fold 0: acc=0.8766 f1=0.8767
+[custom_cnn_cv1] epoch 1/8 train_loss=2.3670 train_acc=0.3679 val_loss=1.7004 val_acc=0.5060
+[custom_cnn_cv1] epoch 2/8 train_loss=1.5312 train_acc=0.5680 val_loss=1.1822 val_acc=0.6679
+[custom_cnn_cv1] epoch 3/8 train_loss=1.1483 train_acc=0.6679 val_loss=0.9010 val_acc=0.7492
+[custom_cnn_cv1] epoch 4/8 train_loss=0.9558 train_acc=0.7218 val_loss=1.2013 val_acc=0.6331
+[custom_cnn_cv1] epoch 5/8 train_loss=0.8180 train_acc=0.7551 val_loss=0.6740 val_acc=0.7927
+[custom_cnn_cv1] epoch 6/8 train_loss=0.7249 train_acc=0.7802 val_loss=0.5410 val_acc=0.8392
+[custom_cnn_cv1] epoch 7/8 train_loss=0.6472 train_acc=0.7950 val_loss=0.7263 val_acc=0.7658
+[custom_cnn_cv1] epoch 8/8 train_loss=0.5800 train_acc=0.8213 val_loss=0.6812 val_acc=0.7798
+[CV] custom_cnn fold 1: acc=0.8392 f1=0.8383
+[custom_cnn_cv2] epoch 1/8 train_loss=2.3845 train_acc=0.3623 val_loss=1.6862 val_acc=0.5557
+[custom_cnn_cv2] epoch 2/8 train_loss=1.5355 train_acc=0.5726 val_loss=1.1622 val_acc=0.6755
+[custom_cnn_cv2] epoch 3/8 train_loss=1.1683 train_acc=0.6646 val_loss=1.0995 val_acc=0.6591
+[custom_cnn_cv2] epoch 4/8 train_loss=0.9364 train_acc=0.7224 val_loss=0.8170 val_acc=0.7639
+[custom_cnn_cv2] epoch 5/8 train_loss=0.8152 train_acc=0.7551 val_loss=0.6779 val_acc=0.7909
+[custom_cnn_cv2] epoch 6/8 train_loss=0.7113 train_acc=0.7917 val_loss=0.6008 val_acc=0.8169
+[custom_cnn_cv2] epoch 7/8 train_loss=0.6559 train_acc=0.7990 val_loss=0.5485 val_acc=0.8316
+[custom_cnn_cv2] epoch 8/8 train_loss=0.5930 train_acc=0.8139 val_loss=0.4909 val_acc=0.8445
+[CV] custom_cnn fold 2: acc=0.8445 f1=0.8425
+[resnet18_cv0] epoch 1/8 train_loss=0.6681 train_acc=0.8008 val_loss=0.4207 val_acc=0.8720
+[resnet18_cv0] epoch 2/8 train_loss=0.3352 train_acc=0.8923 val_loss=0.2982 val_acc=0.9049
+[resnet18_cv0] epoch 3/8 train_loss=0.2386 train_acc=0.9234 val_loss=0.2687 val_acc=0.9137
+[resnet18_cv0] epoch 4/8 train_loss=0.2224 train_acc=0.9276 val_loss=0.1915 val_acc=0.9362
+[resnet18_cv0] epoch 5/8 train_loss=0.1704 train_acc=0.9476 val_loss=0.2215 val_acc=0.9330
+[resnet18_cv0] epoch 6/8 train_loss=0.1704 train_acc=0.9432 val_loss=0.1969 val_acc=0.9385
+[resnet18_cv0] epoch 7/8 train_loss=0.1710 train_acc=0.9428 val_loss=0.1842 val_acc=0.9371
+[resnet18_cv0] epoch 8/8 train_loss=0.1575 train_acc=0.9494 val_loss=0.1357 val_acc=0.9560
+[CV] resnet18 fold 0: acc=0.9560 f1=0.9553
+[resnet18_cv1] epoch 1/8 train_loss=0.6889 train_acc=0.7926 val_loss=0.2953 val_acc=0.9014
+[resnet18_cv1] epoch 2/8 train_loss=0.3092 train_acc=0.9002 val_loss=0.3487 val_acc=0.8901
+[resnet18_cv1] epoch 3/8 train_loss=0.2552 train_acc=0.9141 val_loss=0.2370 val_acc=0.9215
+[resnet18_cv1] epoch 4/8 train_loss=0.2039 train_acc=0.9303 val_loss=0.2328 val_acc=0.9254
+[resnet18_cv1] epoch 5/8 train_loss=0.1938 train_acc=0.9371 val_loss=0.2003 val_acc=0.9355
+[resnet18_cv1] epoch 6/8 train_loss=0.1725 train_acc=0.9439 val_loss=0.1654 val_acc=0.9438
+[resnet18_cv1] epoch 7/8 train_loss=0.1457 train_acc=0.9523 val_loss=0.2237 val_acc=0.9309
+[resnet18_cv1] epoch 8/8 train_loss=0.1466 train_acc=0.9524 val_loss=0.1629 val_acc=0.9496
+[CV] resnet18 fold 1: acc=0.9496 f1=0.9505
+[resnet18_cv2] epoch 1/8 train_loss=0.6643 train_acc=0.7950 val_loss=0.3901 val_acc=0.8706
+[resnet18_cv2] epoch 2/8 train_loss=0.3069 train_acc=0.9002 val_loss=0.2422 val_acc=0.9208
+[resnet18_cv2] epoch 3/8 train_loss=0.2519 train_acc=0.9191 val_loss=0.2422 val_acc=0.9208
+[resnet18_cv2] epoch 4/8 train_loss=0.2251 train_acc=0.9247 val_loss=0.1501 val_acc=0.9514
+[resnet18_cv2] epoch 5/8 train_loss=0.1751 train_acc=0.9440 val_loss=0.1503 val_acc=0.9507
+[resnet18_cv2] epoch 6/8 train_loss=0.1702 train_acc=0.9435 val_loss=0.1881 val_acc=0.9397
+[resnet18_cv2] epoch 7/8 train_loss=0.1691 train_acc=0.9448 val_loss=0.1775 val_acc=0.9383
+[resnet18_cv2] early stopping at epoch 7
+[CV] resnet18 fold 2: acc=0.9514 f1=0.9508
+[mobilenet_v2_cv0] epoch 1/8 train_loss=0.6939 train_acc=0.7930 val_loss=0.4384 val_acc=0.8561
+[mobilenet_v2_cv0] epoch 2/8 train_loss=0.3668 train_acc=0.8828 val_loss=0.4194 val_acc=0.8641
+[mobilenet_v2_cv0] epoch 3/8 train_loss=0.2959 train_acc=0.9038 val_loss=0.3436 val_acc=0.8911
+[mobilenet_v2_cv0] epoch 4/8 train_loss=0.2557 train_acc=0.9141 val_loss=0.2738 val_acc=0.9114
+[mobilenet_v2_cv0] epoch 5/8 train_loss=0.2195 train_acc=0.9291 val_loss=0.2799 val_acc=0.9130
+[mobilenet_v2_cv0] epoch 6/8 train_loss=0.2001 train_acc=0.9329 val_loss=0.2793 val_acc=0.9137
+[mobilenet_v2_cv0] epoch 7/8 train_loss=0.1735 train_acc=0.9425 val_loss=0.3501 val_acc=0.8975
+[mobilenet_v2_cv0] early stopping at epoch 7
+[CV] mobilenet_v2 fold 0: acc=0.9114 f1=0.9099
+[mobilenet_v2_cv1] epoch 1/8 train_loss=0.7295 train_acc=0.7871 val_loss=0.4175 val_acc=0.8639
+[mobilenet_v2_cv1] epoch 2/8 train_loss=0.3647 train_acc=0.8786 val_loss=0.3831 val_acc=0.8839
+[mobilenet_v2_cv1] epoch 3/8 train_loss=0.2794 train_acc=0.9080 val_loss=0.2695 val_acc=0.9076
+[mobilenet_v2_cv1] epoch 4/8 train_loss=0.2388 train_acc=0.9197 val_loss=0.2386 val_acc=0.9192
+[mobilenet_v2_cv1] epoch 5/8 train_loss=0.2158 train_acc=0.9285 val_loss=0.3913 val_acc=0.8862
+[mobilenet_v2_cv1] epoch 6/8 train_loss=0.1957 train_acc=0.9318 val_loss=0.2715 val_acc=0.9164
+[mobilenet_v2_cv1] epoch 7/8 train_loss=0.1950 train_acc=0.9341 val_loss=0.2095 val_acc=0.9281
+[mobilenet_v2_cv1] epoch 8/8 train_loss=0.1692 train_acc=0.9425 val_loss=0.3102 val_acc=0.9060
+[CV] mobilenet_v2 fold 1: acc=0.9281 f1=0.9283
+[mobilenet_v2_cv2] epoch 1/8 train_loss=0.7131 train_acc=0.7879 val_loss=0.5710 val_acc=0.8079
+[mobilenet_v2_cv2] epoch 2/8 train_loss=0.3357 train_acc=0.8895 val_loss=0.3125 val_acc=0.8929
+[mobilenet_v2_cv2] epoch 3/8 train_loss=0.2849 train_acc=0.9050 val_loss=0.3262 val_acc=0.8908
+[mobilenet_v2_cv2] epoch 4/8 train_loss=0.2565 train_acc=0.9142 val_loss=0.3343 val_acc=0.8977
+[mobilenet_v2_cv2] epoch 5/8 train_loss=0.2289 train_acc=0.9267 val_loss=0.2518 val_acc=0.9155
+[mobilenet_v2_cv2] epoch 6/8 train_loss=0.2077 train_acc=0.9321 val_loss=0.3599 val_acc=0.8890
+[mobilenet_v2_cv2] epoch 7/8 train_loss=0.1994 train_acc=0.9321 val_loss=0.2320 val_acc=0.9238
+[mobilenet_v2_cv2] epoch 8/8 train_loss=0.1727 train_acc=0.9390 val_loss=0.2615 val_acc=0.9219
+[CV] mobilenet_v2 fold 2: acc=0.9238 f1=0.9222
+[efficientnet_b0_cv0] epoch 1/8 train_loss=0.8555 train_acc=0.7651 val_loss=0.4134 val_acc=0.8628
+[efficientnet_b0_cv0] epoch 2/8 train_loss=0.3500 train_acc=0.8871 val_loss=0.2864 val_acc=0.9067
+[efficientnet_b0_cv0] epoch 3/8 train_loss=0.2635 train_acc=0.9133 val_loss=0.2526 val_acc=0.9190
+[efficientnet_b0_cv0] epoch 4/8 train_loss=0.2355 train_acc=0.9240 val_loss=0.2539 val_acc=0.9217
+[efficientnet_b0_cv0] epoch 5/8 train_loss=0.1864 train_acc=0.9384 val_loss=0.2430 val_acc=0.9259
+[efficientnet_b0_cv0] epoch 6/8 train_loss=0.1827 train_acc=0.9437 val_loss=0.2196 val_acc=0.9286
+[efficientnet_b0_cv0] epoch 7/8 train_loss=0.1680 train_acc=0.9442 val_loss=0.2298 val_acc=0.9314
+[efficientnet_b0_cv0] epoch 8/8 train_loss=0.1661 train_acc=0.9428 val_loss=0.2184 val_acc=0.9351
+[CV] efficientnet_b0 fold 0: acc=0.9351 f1=0.9353
+[efficientnet_b0_cv1] epoch 1/8 train_loss=0.8700 train_acc=0.7633 val_loss=0.4056 val_acc=0.8664
+[efficientnet_b0_cv1] epoch 2/8 train_loss=0.3476 train_acc=0.8877 val_loss=0.2744 val_acc=0.9086
+[efficientnet_b0_cv1] epoch 3/8 train_loss=0.2730 train_acc=0.9088 val_loss=0.2404 val_acc=0.9125
+[efficientnet_b0_cv1] epoch 4/8 train_loss=0.2335 train_acc=0.9234 val_loss=0.2181 val_acc=0.9279
+[efficientnet_b0_cv1] epoch 5/8 train_loss=0.2082 train_acc=0.9315 val_loss=0.2146 val_acc=0.9309
+[efficientnet_b0_cv1] epoch 6/8 train_loss=0.1674 train_acc=0.9445 val_loss=0.1978 val_acc=0.9367
+[efficientnet_b0_cv1] epoch 7/8 train_loss=0.1695 train_acc=0.9447 val_loss=0.1987 val_acc=0.9348
+[efficientnet_b0_cv1] epoch 8/8 train_loss=0.1709 train_acc=0.9419 val_loss=0.2182 val_acc=0.9270
+[CV] efficientnet_b0 fold 1: acc=0.9367 f1=0.9356
+[efficientnet_b0_cv2] epoch 1/8 train_loss=0.8814 train_acc=0.7584 val_loss=0.3418 val_acc=0.8892
+[efficientnet_b0_cv2] epoch 2/8 train_loss=0.3589 train_acc=0.8830 val_loss=0.2742 val_acc=0.9095
+[efficientnet_b0_cv2] epoch 3/8 train_loss=0.2837 train_acc=0.9059 val_loss=0.2480 val_acc=0.9215
+[efficientnet_b0_cv2] epoch 4/8 train_loss=0.2276 train_acc=0.9220 val_loss=0.2408 val_acc=0.9208
+[efficientnet_b0_cv2] epoch 5/8 train_loss=0.2061 train_acc=0.9334 val_loss=0.2421 val_acc=0.9194
+[efficientnet_b0_cv2] epoch 6/8 train_loss=0.1906 train_acc=0.9363 val_loss=0.2027 val_acc=0.9334
+[efficientnet_b0_cv2] epoch 7/8 train_loss=0.1702 train_acc=0.9431 val_loss=0.1969 val_acc=0.9332
+[efficientnet_b0_cv2] epoch 8/8 train_loss=0.1633 train_acc=0.9438 val_loss=0.2235 val_acc=0.9298
+[CV] efficientnet_b0 fold 2: acc=0.9332 f1=0.9318
+[shufflenet_v2_cv0] epoch 1/8 train_loss=1.6512 train_acc=0.6715 val_loss=0.4222 val_acc=0.8886
+[shufflenet_v2_cv0] epoch 2/8 train_loss=0.3694 train_acc=0.8981 val_loss=0.2810 val_acc=0.9139
+[shufflenet_v2_cv0] epoch 3/8 train_loss=0.2681 train_acc=0.9179 val_loss=0.2356 val_acc=0.9203
+[shufflenet_v2_cv0] epoch 4/8 train_loss=0.2257 train_acc=0.9302 val_loss=0.2211 val_acc=0.9238
+[shufflenet_v2_cv0] epoch 5/8 train_loss=0.1999 train_acc=0.9369 val_loss=0.2106 val_acc=0.9259
+[shufflenet_v2_cv0] epoch 6/8 train_loss=0.1778 train_acc=0.9447 val_loss=0.1953 val_acc=0.9339
+[shufflenet_v2_cv0] epoch 7/8 train_loss=0.1681 train_acc=0.9428 val_loss=0.2200 val_acc=0.9194
+[shufflenet_v2_cv0] epoch 8/8 train_loss=0.1564 train_acc=0.9483 val_loss=0.1634 val_acc=0.9464
+[CV] shufflenet_v2 fold 0: acc=0.9464 f1=0.9459
+[shufflenet_v2_cv1] epoch 1/8 train_loss=1.6570 train_acc=0.6642 val_loss=0.4347 val_acc=0.8717
+[shufflenet_v2_cv1] epoch 2/8 train_loss=0.3759 train_acc=0.8952 val_loss=0.3002 val_acc=0.9012
+[shufflenet_v2_cv1] epoch 3/8 train_loss=0.2632 train_acc=0.9188 val_loss=0.2429 val_acc=0.9208
+[shufflenet_v2_cv1] epoch 4/8 train_loss=0.2201 train_acc=0.9310 val_loss=0.2442 val_acc=0.9192
+[shufflenet_v2_cv1] epoch 5/8 train_loss=0.2019 train_acc=0.9349 val_loss=0.2302 val_acc=0.9224
+[shufflenet_v2_cv1] epoch 6/8 train_loss=0.1789 train_acc=0.9427 val_loss=0.2067 val_acc=0.9284
+[shufflenet_v2_cv1] epoch 7/8 train_loss=0.1658 train_acc=0.9446 val_loss=0.1908 val_acc=0.9330
+[shufflenet_v2_cv1] epoch 8/8 train_loss=0.1630 train_acc=0.9445 val_loss=0.1909 val_acc=0.9374
+[CV] shufflenet_v2 fold 1: acc=0.9330 f1=0.9330
+[shufflenet_v2_cv2] epoch 1/8 train_loss=1.6522 train_acc=0.6511 val_loss=0.4390 val_acc=0.8703
+[shufflenet_v2_cv2] epoch 2/8 train_loss=0.3708 train_acc=0.8967 val_loss=0.3030 val_acc=0.9040
+[shufflenet_v2_cv2] epoch 3/8 train_loss=0.2575 train_acc=0.9246 val_loss=0.2578 val_acc=0.9132
+[shufflenet_v2_cv2] epoch 4/8 train_loss=0.2275 train_acc=0.9293 val_loss=0.2089 val_acc=0.9314
+[shufflenet_v2_cv2] epoch 5/8 train_loss=0.2015 train_acc=0.9352 val_loss=0.1999 val_acc=0.9346
+[shufflenet_v2_cv2] epoch 6/8 train_loss=0.1831 train_acc=0.9405 val_loss=0.2134 val_acc=0.9300
+[shufflenet_v2_cv2] epoch 7/8 train_loss=0.1643 train_acc=0.9480 val_loss=0.1677 val_acc=0.9438
+[shufflenet_v2_cv2] epoch 8/8 train_loss=0.1600 train_acc=0.9490 val_loss=0.1976 val_acc=0.9325
+[CV] shufflenet_v2 fold 2: acc=0.9438 f1=0.9441
+
+=== Generalization: OOD (PlantDoc) ===
+[OOD] custom_cnn: ood_acc=0.0815 (in-dist=0.9228855721393034)
+[OOD] resnet18: ood_acc=0.1185 (in-dist=0.9522388059701492)
+[OOD] mobilenet_v2: ood_acc=0.1220 (in-dist=0.9353233830845771)
+[OOD] efficientnet_b0: ood_acc=0.1201 (in-dist=0.9562189054726368)
+[OOD] shufflenet_v2: ood_acc=0.1080 (in-dist=0.9467661691542288)
+
+=== Generalization: robustness ===
+[Robustness] custom_cnn noise level=0: acc=0.8871
+[Robustness] custom_cnn noise level=1: acc=0.7652
+[Robustness] custom_cnn noise level=2: acc=0.3478
+[Robustness] custom_cnn noise level=3: acc=0.1468
+[Robustness] custom_cnn blur level=0: acc=0.8871
+[Robustness] custom_cnn blur level=1: acc=0.9229
+[Robustness] custom_cnn blur level=2: acc=0.8766
+[Robustness] custom_cnn blur level=3: acc=0.7353
+[Robustness] custom_cnn brightness level=0: acc=0.8871
+[Robustness] custom_cnn brightness level=1: acc=0.8756
+[Robustness] custom_cnn brightness level=2: acc=0.8075
+[Robustness] custom_cnn brightness level=3: acc=0.6801
+[Robustness] custom_cnn rotation level=0: acc=0.8871
+[Robustness] custom_cnn rotation level=1: acc=0.9249
+[Robustness] custom_cnn rotation level=2: acc=0.9194
+[Robustness] custom_cnn rotation level=3: acc=0.9119
+[Robustness] resnet18 noise level=0: acc=0.9468
+[Robustness] resnet18 noise level=1: acc=0.9169
+[Robustness] resnet18 noise level=2: acc=0.8303
+[Robustness] resnet18 noise level=3: acc=0.6881
+[Robustness] resnet18 blur level=0: acc=0.9468
+[Robustness] resnet18 blur level=1: acc=0.9542
+[Robustness] resnet18 blur level=2: acc=0.9433
+[Robustness] resnet18 blur level=3: acc=0.9204
+[Robustness] resnet18 brightness level=0: acc=0.9468
+[Robustness] resnet18 brightness level=1: acc=0.9323
+[Robustness] resnet18 brightness level=2: acc=0.8721
+[Robustness] resnet18 brightness level=3: acc=0.7378
+[Robustness] resnet18 rotation level=0: acc=0.9468
+[Robustness] resnet18 rotation level=1: acc=0.9493
+[Robustness] resnet18 rotation level=2: acc=0.9269
+[Robustness] resnet18 rotation level=3: acc=0.8930
+[Robustness] mobilenet_v2 noise level=0: acc=0.9174
+[Robustness] mobilenet_v2 noise level=1: acc=0.8483
+[Robustness] mobilenet_v2 noise level=2: acc=0.6438
+[Robustness] mobilenet_v2 noise level=3: acc=0.4284
+[Robustness] mobilenet_v2 blur level=0: acc=0.9174
+[Robustness] mobilenet_v2 blur level=1: acc=0.9348
+[Robustness] mobilenet_v2 blur level=2: acc=0.9070
+[Robustness] mobilenet_v2 blur level=3: acc=0.8453
+[Robustness] mobilenet_v2 brightness level=0: acc=0.9174
+[Robustness] mobilenet_v2 brightness level=1: acc=0.8806
+[Robustness] mobilenet_v2 brightness level=2: acc=0.7990
+[Robustness] mobilenet_v2 brightness level=3: acc=0.6423
+[Robustness] mobilenet_v2 rotation level=0: acc=0.9174
+[Robustness] mobilenet_v2 rotation level=1: acc=0.9219
+[Robustness] mobilenet_v2 rotation level=2: acc=0.9060
+[Robustness] mobilenet_v2 rotation level=3: acc=0.8697
+[Robustness] efficientnet_b0 noise level=0: acc=0.9458
+[Robustness] efficientnet_b0 noise level=1: acc=0.8995
+[Robustness] efficientnet_b0 noise level=2: acc=0.4711
+[Robustness] efficientnet_b0 noise level=3: acc=0.0527
+[Robustness] efficientnet_b0 blur level=0: acc=0.9458
+[Robustness] efficientnet_b0 blur level=1: acc=0.9577
+[Robustness] efficientnet_b0 blur level=2: acc=0.9353
+[Robustness] efficientnet_b0 blur level=3: acc=0.8234
+[Robustness] efficientnet_b0 brightness level=0: acc=0.9458
+[Robustness] efficientnet_b0 brightness level=1: acc=0.9299
+[Robustness] efficientnet_b0 brightness level=2: acc=0.8915
+[Robustness] efficientnet_b0 brightness level=3: acc=0.8403
+[Robustness] efficientnet_b0 rotation level=0: acc=0.9458
+[Robustness] efficientnet_b0 rotation level=1: acc=0.9557
+[Robustness] efficientnet_b0 rotation level=2: acc=0.9378
+[Robustness] efficientnet_b0 rotation level=3: acc=0.9144
+[Robustness] shufflenet_v2 noise level=0: acc=0.9284
+[Robustness] shufflenet_v2 noise level=1: acc=0.8687
+[Robustness] shufflenet_v2 noise level=2: acc=0.6204
+[Robustness] shufflenet_v2 noise level=3: acc=0.3642
+[Robustness] shufflenet_v2 blur level=0: acc=0.9284
+[Robustness] shufflenet_v2 blur level=1: acc=0.9453
+[Robustness] shufflenet_v2 blur level=2: acc=0.9323
+[Robustness] shufflenet_v2 blur level=3: acc=0.8851
+[Robustness] shufflenet_v2 brightness level=0: acc=0.9284
+[Robustness] shufflenet_v2 brightness level=1: acc=0.9184
+[Robustness] shufflenet_v2 brightness level=2: acc=0.8353
+[Robustness] shufflenet_v2 brightness level=3: acc=0.6617
+[Robustness] shufflenet_v2 rotation level=0: acc=0.9284
+[Robustness] shufflenet_v2 rotation level=1: acc=0.9443
+[Robustness] shufflenet_v2 rotation level=2: acc=0.9308
+[Robustness] shufflenet_v2 rotation level=3: acc=0.8965
+
+=== XAI ===
+Running XAI for custom_cnn...
+  0%|          | 0/300 [00:00<?, ?it/s]  3%|3         | 10/300 [00:00<00:27, 10.61it/s]  7%|6         | 20/300 [00:01<00:12, 21.92it/s] 13%|#3        | 40/300 [00:01<00:05, 47.05it/s] 20%|##        | 60/300 [00:01<00:03, 70.38it/s] 27%|##6       | 80/300 [00:01<00:02, 88.88it/s] 31%|###1      | 94/300 [00:01<00:02, 87.05it/s] 37%|###6      | 110/300 [00:01<00:01, 97.09it/s] 43%|####3     | 130/300 [00:01<00:01, 110.93it/s] 50%|#####     | 150/300 [00:02<00:01, 121.20it/s] 57%|#####6    | 170/300 [00:02<00:01, 129.53it/s] 63%|######3   | 190/300 [00:02<00:00, 131.83it/s] 70%|#######   | 210/300 [00:02<00:00, 135.03it/s] 77%|#######6  | 230/300 [00:02<00:00, 135.74it/s] 83%|########3 | 250/300 [00:02<00:00, 139.27it/s] 90%|######### | 270/300 [00:02<00:00, 139.46it/s] 97%|#########6| 290/300 [00:03<00:00, 138.61it/s]100%|##########| 300/300 [00:03<00:00, 97.21it/s] 
+  0%|          | 0/300 [00:00<?, ?it/s]  3%|3         | 10/300 [00:00<00:03, 89.90it/s] 10%|#         | 30/300 [00:00<00:02, 122.75it/s] 17%|#6        | 50/300 [00:00<00:01, 126.22it/s] 23%|##3       | 70/300 [00:00<00:01, 124.31it/s] 30%|###       | 90/300 [00:00<00:01, 122.23it/s] 37%|###6      | 110/300 [00:00<00:01, 121.71it/s] 43%|####3     | 130/300 [00:01<00:01, 121.51it/s] 50%|#####     | 150/300 [00:01<00:01, 126.65it/s] 57%|#####6    | 170/300 [00:01<00:01, 126.75it/s] 63%|######3   | 190/300 [00:01<00:00, 127.47it/s] 70%|#######   | 210/300 [00:01<00:00, 127.14it/s] 77%|#######6  | 230/300 [00:01<00:00, 128.93it/s] 83%|########3 | 250/300 [00:01<00:00, 131.27it/s] 90%|######### | 270/300 [00:02<00:00, 132.21it/s] 97%|#########6| 290/300 [00:02<00:00, 132.36it/s]100%|##########| 300/300 [00:02<00:00, 127.54it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:02, 127.57it/s] 13%|#3        | 40/300 [00:00<00:02, 124.91it/s] 20%|##        | 60/300 [00:00<00:01, 125.67it/s] 27%|##6       | 80/300 [00:00<00:01, 125.97it/s] 33%|###3      | 100/300 [00:00<00:01, 125.95it/s] 40%|####      | 120/300 [00:00<00:01, 122.94it/s] 47%|####6     | 140/300 [00:01<00:01, 121.74it/s] 53%|#####3    | 160/300 [00:01<00:01, 121.37it/s] 60%|######    | 180/300 [00:01<00:00, 121.86it/s] 67%|######6   | 200/300 [00:01<00:00, 124.48it/s] 73%|#######3  | 220/300 [00:01<00:00, 123.89it/s] 80%|########  | 240/300 [00:01<00:00, 122.70it/s] 87%|########6 | 260/300 [00:02<00:00, 121.68it/s] 93%|#########2| 278/300 [00:02<00:00, 133.70it/s] 97%|#########7| 292/300 [00:02<00:00, 118.60it/s]100%|##########| 300/300 [00:02<00:00, 122.16it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:02, 133.48it/s] 13%|#3        | 40/300 [00:00<00:01, 133.23it/s] 20%|##        | 60/300 [00:00<00:01, 132.48it/s] 27%|##6       | 80/300 [00:00<00:01, 129.29it/s] 33%|###3      | 100/300 [00:00<00:01, 129.00it/s] 40%|####      | 120/300 [00:00<00:01, 124.86it/s] 47%|####6     | 140/300 [00:01<00:01, 124.52it/s] 53%|#####3    | 160/300 [00:01<00:01, 127.93it/s] 60%|######    | 180/300 [00:01<00:00, 127.89it/s] 67%|######6   | 200/300 [00:01<00:00, 125.85it/s] 71%|#######1  | 213/300 [00:02<00:01, 44.43it/s]  74%|#######4  | 223/300 [00:03<00:03, 23.26it/s] 77%|#######6  | 230/300 [00:05<00:04, 15.05it/s] 79%|#######9  | 237/300 [00:05<00:03, 17.55it/s] 81%|########1 | 243/300 [00:05<00:03, 14.94it/s] 83%|########3 | 250/300 [00:06<00:02, 17.74it/s] 87%|########6 | 260/300 [00:06<00:01, 23.31it/s] 90%|######### | 270/300 [00:06<00:01, 29.58it/s] 93%|#########3| 280/300 [00:06<00:00, 35.79it/s] 97%|#########6| 290/300 [00:06<00:00, 41.81it/s]100%|##########| 300/300 [00:06<00:00, 48.43it/s]100%|##########| 300/300 [00:06<00:00, 44.43it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  6%|6         | 19/300 [00:00<00:01, 187.84it/s] 13%|#2        | 38/300 [00:00<00:01, 138.09it/s] 18%|#7        | 53/300 [00:00<00:04, 57.12it/s]  21%|##1       | 63/300 [00:00<00:04, 57.11it/s] 24%|##3       | 71/300 [00:01<00:04, 51.16it/s] 27%|##6       | 80/300 [00:01<00:07, 30.98it/s] 30%|###       | 90/300 [00:01<00:05, 38.71it/s] 37%|###6      | 110/300 [00:01<00:03, 57.78it/s] 43%|####3     | 130/300 [00:02<00:02, 73.67it/s] 50%|#####     | 150/300 [00:02<00:01, 85.38it/s] 57%|#####6    | 170/300 [00:02<00:01, 97.21it/s] 63%|######3   | 190/300 [00:02<00:01, 103.70it/s] 70%|#######   | 210/300 [00:02<00:00, 108.20it/s] 77%|#######6  | 230/300 [00:02<00:00, 111.09it/s] 81%|########  | 242/300 [00:03<00:00, 112.33it/s] 85%|########4 | 254/300 [00:03<00:00, 109.43it/s] 89%|########8 | 266/300 [00:03<00:00, 52.04it/s]  92%|#########1| 275/300 [00:05<00:01, 22.69it/s] 94%|#########3| 282/300 [00:06<00:01, 14.29it/s] 96%|#########6| 288/300 [00:06<00:00, 16.51it/s] 98%|#########7| 293/300 [00:07<00:00, 10.89it/s] 99%|#########9| 298/300 [00:07<00:00, 12.98it/s]100%|##########| 300/300 [00:08<00:00, 33.55it/s]
+Running XAI for resnet18...
+  0%|          | 0/300 [00:00<?, ?it/s]  3%|3         | 10/300 [00:00<00:04, 72.14it/s]  7%|6         | 20/300 [00:00<00:03, 77.68it/s] 10%|#         | 30/300 [00:00<00:03, 82.99it/s] 13%|#3        | 40/300 [00:00<00:03, 84.33it/s] 17%|#6        | 50/300 [00:00<00:02, 85.25it/s] 20%|##        | 60/300 [00:00<00:02, 84.98it/s] 23%|##3       | 70/300 [00:00<00:02, 84.57it/s] 27%|##6       | 80/300 [00:00<00:02, 83.18it/s] 30%|###       | 90/300 [00:01<00:02, 83.92it/s] 33%|###3      | 100/300 [00:01<00:02, 84.73it/s] 37%|###6      | 110/300 [00:01<00:02, 84.55it/s] 40%|####      | 120/300 [00:01<00:02, 84.08it/s] 43%|####3     | 130/300 [00:01<00:02, 83.90it/s] 47%|####6     | 140/300 [00:01<00:01, 84.91it/s] 50%|#####     | 150/300 [00:01<00:01, 85.02it/s] 53%|#####3    | 160/300 [00:01<00:01, 83.93it/s] 57%|#####6    | 170/300 [00:02<00:01, 85.13it/s] 60%|######    | 180/300 [00:02<00:01, 84.56it/s] 63%|######3   | 190/300 [00:02<00:01, 85.16it/s] 67%|######6   | 200/300 [00:02<00:01, 85.18it/s] 70%|#######   | 210/300 [00:02<00:01, 85.65it/s] 73%|#######3  | 220/300 [00:02<00:00, 85.87it/s] 77%|#######6  | 230/300 [00:02<00:00, 86.17it/s] 80%|########  | 240/300 [00:02<00:00, 87.29it/s] 83%|########3 | 250/300 [00:02<00:00, 87.26it/s] 87%|########6 | 260/300 [00:03<00:00, 86.79it/s] 93%|#########3| 279/300 [00:03<00:00, 114.55it/s] 97%|#########7| 291/300 [00:03<00:00, 85.50it/s] 100%|##########| 300/300 [00:03<00:00, 85.47it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  3%|3         | 10/300 [00:00<00:03, 92.97it/s]  7%|6         | 20/300 [00:00<00:03, 89.08it/s] 10%|#         | 30/300 [00:00<00:03, 80.81it/s] 13%|#3        | 40/300 [00:00<00:03, 79.65it/s] 17%|#6        | 50/300 [00:00<00:03, 79.86it/s] 20%|##        | 60/300 [00:00<00:03, 77.73it/s] 23%|##3       | 70/300 [00:00<00:02, 77.98it/s] 27%|##6       | 80/300 [00:01<00:02, 78.50it/s] 30%|###       | 90/300 [00:01<00:02, 80.40it/s] 33%|###3      | 100/300 [00:01<00:02, 77.66it/s] 37%|###6      | 110/300 [00:01<00:02, 77.86it/s] 40%|####      | 120/300 [00:01<00:02, 75.97it/s] 43%|####3     | 130/300 [00:01<00:02, 78.52it/s] 47%|####6     | 140/300 [00:01<00:02, 77.41it/s] 50%|#####     | 150/300 [00:01<00:01, 77.63it/s] 53%|#####3    | 160/300 [00:02<00:01, 76.03it/s] 57%|#####6    | 170/300 [00:02<00:01, 75.28it/s] 60%|######    | 180/300 [00:02<00:01, 76.56it/s] 63%|######3   | 190/300 [00:02<00:01, 77.25it/s] 67%|######6   | 200/300 [00:02<00:01, 77.17it/s] 70%|#######   | 210/300 [00:02<00:01, 76.66it/s] 73%|#######3  | 220/300 [00:02<00:01, 79.36it/s] 77%|#######6  | 230/300 [00:02<00:00, 80.85it/s] 80%|########  | 240/300 [00:03<00:00, 80.80it/s] 83%|########3 | 250/300 [00:03<00:00, 78.33it/s] 87%|########6 | 260/300 [00:03<00:00, 76.92it/s] 90%|######### | 270/300 [00:03<00:00, 78.20it/s] 93%|#########3| 280/300 [00:03<00:00, 78.63it/s] 97%|#########6| 290/300 [00:03<00:00, 78.97it/s]100%|##########| 300/300 [00:03<00:00, 78.19it/s]100%|##########| 300/300 [00:03<00:00, 78.39it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  3%|3         | 10/300 [00:00<00:03, 83.55it/s]  7%|6         | 20/300 [00:00<00:03, 78.28it/s] 10%|#         | 30/300 [00:00<00:03, 81.39it/s] 13%|#3        | 40/300 [00:00<00:03, 80.13it/s] 17%|#6        | 50/300 [00:00<00:03, 78.20it/s] 20%|##        | 60/300 [00:00<00:02, 82.40it/s] 23%|##3       | 70/300 [00:00<00:02, 82.52it/s] 27%|##6       | 80/300 [00:00<00:02, 79.74it/s] 30%|###       | 90/300 [00:01<00:02, 79.66it/s] 33%|###3      | 100/300 [00:01<00:02, 81.70it/s] 37%|###6      | 110/300 [00:01<00:02, 80.38it/s] 40%|####      | 120/300 [00:01<00:02, 79.57it/s] 43%|####3     | 130/300 [00:01<00:02, 79.16it/s] 47%|####6     | 140/300 [00:01<00:02, 77.82it/s] 50%|#####     | 150/300 [00:01<00:01, 79.01it/s] 53%|#####3    | 160/300 [00:01<00:01, 79.79it/s] 57%|#####6    | 170/300 [00:02<00:01, 80.13it/s] 60%|######    | 180/300 [00:02<00:01, 80.70it/s] 63%|######3   | 190/300 [00:02<00:01, 77.05it/s] 67%|######6   | 200/300 [00:02<00:01, 76.37it/s] 70%|#######   | 210/300 [00:02<00:01, 75.61it/s] 73%|#######3  | 220/300 [00:02<00:01, 74.72it/s] 77%|#######6  | 230/300 [00:02<00:00, 76.52it/s] 80%|########  | 240/300 [00:03<00:00, 76.50it/s] 83%|########3 | 250/300 [00:03<00:00, 76.00it/s] 87%|########6 | 260/300 [00:03<00:00, 77.61it/s] 90%|######### | 270/300 [00:03<00:00, 78.48it/s] 93%|#########3| 280/300 [00:03<00:00, 78.05it/s] 97%|#########6| 290/300 [00:03<00:00, 78.21it/s]100%|##########| 300/300 [00:03<00:00, 75.64it/s]100%|##########| 300/300 [00:03<00:00, 78.35it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  3%|3         | 10/300 [00:00<00:03, 87.92it/s]  7%|6         | 20/300 [00:00<00:03, 81.23it/s] 10%|#         | 30/300 [00:00<00:03, 80.59it/s] 13%|#3        | 40/300 [00:00<00:03, 79.01it/s] 17%|#6        | 50/300 [00:00<00:03, 79.64it/s] 20%|##        | 60/300 [00:00<00:03, 78.23it/s] 23%|##3       | 70/300 [00:00<00:02, 76.90it/s] 27%|##6       | 80/300 [00:01<00:02, 77.94it/s] 30%|###       | 90/300 [00:01<00:02, 78.27it/s] 33%|###3      | 100/300 [00:01<00:02, 77.71it/s] 37%|###6      | 110/300 [00:01<00:02, 75.52it/s] 40%|####      | 120/300 [00:01<00:02, 76.77it/s] 43%|####3     | 130/300 [00:01<00:02, 77.46it/s] 47%|####6     | 140/300 [00:01<00:02, 76.99it/s] 50%|#####     | 150/300 [00:01<00:01, 77.10it/s] 53%|#####3    | 160/300 [00:02<00:01, 77.00it/s] 57%|#####6    | 170/300 [00:02<00:01, 77.89it/s] 60%|######    | 180/300 [00:02<00:01, 79.42it/s] 63%|######3   | 190/300 [00:02<00:01, 81.06it/s] 67%|######6   | 200/300 [00:02<00:01, 79.89it/s] 70%|#######   | 210/300 [00:02<00:01, 81.65it/s] 73%|#######3  | 220/300 [00:02<00:00, 80.61it/s] 77%|#######6  | 230/300 [00:02<00:00, 79.57it/s] 80%|########  | 240/300 [00:03<00:00, 78.93it/s] 83%|########3 | 250/300 [00:03<00:00, 77.49it/s] 87%|########6 | 260/300 [00:03<00:00, 79.70it/s] 90%|######### | 270/300 [00:03<00:00, 78.94it/s] 93%|#########3| 280/300 [00:03<00:00, 76.43it/s] 97%|#########6| 290/300 [00:03<00:00, 75.92it/s]100%|##########| 300/300 [00:03<00:00, 74.29it/s]100%|##########| 300/300 [00:03<00:00, 77.99it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  3%|3         | 10/300 [00:00<00:03, 86.91it/s]  7%|6         | 20/300 [00:00<00:03, 80.99it/s] 10%|#         | 30/300 [00:00<00:03, 80.16it/s] 13%|#3        | 40/300 [00:00<00:03, 78.96it/s] 17%|#6        | 50/300 [00:00<00:03, 76.63it/s] 20%|##        | 60/300 [00:00<00:03, 74.65it/s] 23%|##3       | 70/300 [00:00<00:03, 74.30it/s] 27%|##6       | 80/300 [00:01<00:03, 72.63it/s] 30%|###       | 90/300 [00:01<00:02, 74.47it/s] 33%|###3      | 100/300 [00:01<00:02, 74.79it/s] 37%|###6      | 110/300 [00:01<00:02, 73.99it/s] 40%|####      | 120/300 [00:01<00:02, 78.78it/s] 43%|####3     | 130/300 [00:01<00:02, 79.02it/s] 47%|####6     | 140/300 [00:01<00:02, 76.10it/s] 50%|#####     | 150/300 [00:01<00:01, 75.82it/s] 53%|#####3    | 160/300 [00:02<00:01, 74.22it/s] 57%|#####6    | 170/300 [00:02<00:01, 73.48it/s] 60%|######    | 180/300 [00:02<00:01, 75.72it/s] 63%|######3   | 190/300 [00:02<00:01, 78.36it/s] 67%|######6   | 200/300 [00:02<00:01, 79.89it/s] 70%|#######   | 210/300 [00:02<00:01, 80.31it/s] 73%|#######3  | 220/300 [00:02<00:01, 79.59it/s] 77%|#######6  | 230/300 [00:02<00:00, 78.41it/s] 80%|########  | 240/300 [00:03<00:00, 80.59it/s] 83%|########3 | 250/300 [00:03<00:00, 79.88it/s] 87%|########6 | 260/300 [00:03<00:00, 78.88it/s] 90%|######### | 270/300 [00:03<00:00, 78.14it/s] 93%|#########3| 280/300 [00:03<00:00, 77.75it/s] 97%|#########6| 290/300 [00:03<00:00, 79.77it/s]100%|##########| 300/300 [00:03<00:00, 78.64it/s]100%|##########| 300/300 [00:03<00:00, 77.45it/s]
+Running XAI for mobilenet_v2...
+  0%|          | 0/300 [00:00<?, ?it/s]  3%|3         | 10/300 [00:00<00:03, 77.46it/s] 10%|#         | 30/300 [00:00<00:02, 99.19it/s] 17%|#6        | 50/300 [00:00<00:02, 105.38it/s] 20%|##        | 61/300 [00:00<00:02, 106.29it/s] 26%|##6       | 78/300 [00:00<00:01, 124.08it/s] 30%|###       | 91/300 [00:00<00:02, 103.86it/s] 34%|###4      | 103/300 [00:00<00:01, 100.33it/s] 38%|###8      | 114/300 [00:01<00:01, 98.77it/s]  42%|####1     | 125/300 [00:01<00:01, 99.36it/s] 47%|####6     | 140/300 [00:01<00:01, 96.58it/s] 53%|#####3    | 160/300 [00:01<00:01, 112.56it/s] 60%|######    | 180/300 [00:01<00:00, 123.33it/s] 67%|######6   | 200/300 [00:01<00:00, 132.16it/s] 73%|#######3  | 220/300 [00:01<00:00, 134.05it/s] 80%|########  | 240/300 [00:02<00:00, 135.50it/s] 87%|########6 | 260/300 [00:02<00:00, 132.07it/s] 93%|#########3| 280/300 [00:02<00:00, 133.22it/s]100%|##########| 300/300 [00:02<00:00, 131.75it/s]100%|##########| 300/300 [00:02<00:00, 118.36it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:02, 135.93it/s] 13%|#3        | 40/300 [00:00<00:01, 139.67it/s] 20%|##        | 60/300 [00:00<00:01, 139.95it/s] 27%|##6       | 80/300 [00:00<00:01, 134.67it/s] 33%|###3      | 100/300 [00:00<00:01, 137.49it/s] 40%|####      | 120/300 [00:00<00:01, 132.29it/s] 47%|####6     | 140/300 [00:01<00:01, 134.55it/s] 53%|#####3    | 160/300 [00:01<00:01, 133.76it/s] 60%|######    | 180/300 [00:01<00:00, 135.19it/s] 67%|######6   | 200/300 [00:01<00:00, 132.49it/s] 73%|#######3  | 220/300 [00:01<00:00, 134.55it/s] 80%|########  | 240/300 [00:01<00:00, 131.78it/s] 87%|########6 | 260/300 [00:01<00:00, 132.74it/s] 93%|#########3| 280/300 [00:02<00:00, 132.78it/s]100%|##########| 300/300 [00:02<00:00, 135.60it/s]100%|##########| 300/300 [00:02<00:00, 134.64it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:01, 140.69it/s] 13%|#3        | 40/300 [00:00<00:01, 135.35it/s] 20%|##        | 60/300 [00:00<00:01, 133.94it/s] 27%|##6       | 80/300 [00:00<00:01, 128.18it/s] 33%|###3      | 100/300 [00:00<00:01, 128.20it/s] 40%|####      | 120/300 [00:00<00:01, 124.02it/s] 46%|####6     | 139/300 [00:01<00:01, 139.00it/s] 51%|#####1    | 154/300 [00:01<00:01, 125.73it/s] 57%|#####6    | 170/300 [00:01<00:01, 119.91it/s] 63%|######3   | 190/300 [00:01<00:00, 126.14it/s] 70%|#######   | 210/300 [00:01<00:00, 126.65it/s] 77%|#######6  | 230/300 [00:01<00:00, 129.39it/s] 83%|########3 | 250/300 [00:01<00:00, 129.04it/s] 90%|######### | 270/300 [00:02<00:00, 129.93it/s] 97%|#########6| 290/300 [00:02<00:00, 133.58it/s]100%|##########| 300/300 [00:02<00:00, 130.16it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:01, 146.52it/s] 13%|#3        | 40/300 [00:00<00:01, 130.84it/s] 20%|##        | 60/300 [00:00<00:01, 133.80it/s] 27%|##6       | 80/300 [00:00<00:01, 136.38it/s] 33%|###3      | 100/300 [00:00<00:01, 138.09it/s] 40%|####      | 120/300 [00:00<00:01, 135.82it/s] 47%|####6     | 140/300 [00:01<00:01, 135.05it/s] 53%|#####3    | 160/300 [00:01<00:01, 132.23it/s] 60%|######    | 180/300 [00:01<00:00, 133.78it/s] 67%|######6   | 200/300 [00:01<00:00, 127.75it/s] 73%|#######3  | 220/300 [00:01<00:00, 128.48it/s] 80%|########  | 240/300 [00:01<00:00, 129.88it/s] 87%|########6 | 260/300 [00:01<00:00, 129.81it/s] 93%|#########3| 280/300 [00:02<00:00, 128.76it/s]100%|##########| 300/300 [00:02<00:00, 127.12it/s]100%|##########| 300/300 [00:02<00:00, 131.20it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:01, 145.71it/s] 13%|#3        | 40/300 [00:00<00:01, 139.76it/s] 20%|##        | 60/300 [00:00<00:01, 136.81it/s] 27%|##6       | 80/300 [00:00<00:01, 131.47it/s] 33%|###3      | 100/300 [00:00<00:01, 132.92it/s] 40%|####      | 120/300 [00:00<00:01, 130.76it/s] 47%|####6     | 140/300 [00:01<00:01, 129.41it/s] 53%|#####3    | 160/300 [00:01<00:01, 126.17it/s] 60%|######    | 180/300 [00:01<00:00, 124.94it/s] 67%|######6   | 200/300 [00:01<00:00, 122.61it/s] 73%|#######3  | 220/300 [00:01<00:00, 123.48it/s] 80%|########  | 240/300 [00:01<00:00, 125.39it/s] 87%|########6 | 260/300 [00:02<00:00, 128.25it/s] 93%|#########3| 280/300 [00:02<00:00, 129.09it/s]100%|##########| 300/300 [00:02<00:00, 128.34it/s]100%|##########| 300/300 [00:02<00:00, 128.71it/s]
+Running XAI for efficientnet_b0...
+  0%|          | 0/300 [00:00<?, ?it/s]  3%|3         | 10/300 [00:00<00:04, 67.75it/s] 10%|#         | 30/300 [00:00<00:02, 96.70it/s] 14%|#4        | 42/300 [00:00<00:02, 104.34it/s] 18%|#7        | 53/300 [00:00<00:02, 105.96it/s] 21%|##1       | 64/300 [00:00<00:02, 107.17it/s] 25%|##5       | 75/300 [00:00<00:02, 107.23it/s] 30%|###       | 90/300 [00:00<00:02, 95.20it/s]  35%|###5      | 106/300 [00:01<00:01, 111.70it/s] 40%|####      | 120/300 [00:01<00:01, 96.62it/s]  45%|####5     | 136/300 [00:01<00:01, 111.63it/s] 50%|#####     | 150/300 [00:01<00:01, 97.85it/s]  54%|#####4    | 163/300 [00:01<00:01, 105.19it/s] 59%|#####9    | 178/300 [00:01<00:01, 115.97it/s] 64%|######3   | 191/300 [00:01<00:01, 99.79it/s]  69%|######8   | 206/300 [00:01<00:00, 111.54it/s] 73%|#######3  | 219/300 [00:02<00:00, 114.49it/s] 77%|#######7  | 232/300 [00:02<00:00, 94.59it/s]  81%|########1 | 243/300 [00:02<00:00, 97.53it/s] 87%|########6 | 260/300 [00:02<00:00, 96.37it/s] 92%|#########2| 276/300 [00:02<00:00, 110.64it/s] 96%|#########6| 289/300 [00:02<00:00, 115.28it/s]100%|##########| 300/300 [00:02<00:00, 102.13it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:02, 117.49it/s] 13%|#2        | 38/300 [00:00<00:01, 145.56it/s] 18%|#8        | 54/300 [00:00<00:02, 115.70it/s] 23%|##3       | 70/300 [00:00<00:02, 105.64it/s] 30%|###       | 90/300 [00:00<00:01, 108.39it/s] 37%|###6      | 110/300 [00:00<00:01, 110.27it/s] 43%|####3     | 130/300 [00:01<00:01, 112.34it/s] 50%|####9     | 149/300 [00:01<00:01, 128.94it/s] 54%|#####4    | 163/300 [00:01<00:01, 112.78it/s] 60%|######    | 180/300 [00:01<00:01, 107.88it/s] 67%|######6   | 200/300 [00:01<00:00, 111.72it/s] 73%|#######3  | 220/300 [00:01<00:00, 111.99it/s] 80%|########  | 240/300 [00:02<00:00, 111.83it/s] 85%|########4 | 254/300 [00:02<00:00, 117.41it/s] 90%|######### | 270/300 [00:02<00:00, 106.50it/s] 94%|#########4| 283/300 [00:02<00:00, 111.45it/s] 99%|#########9| 298/300 [00:02<00:00, 120.38it/s]100%|##########| 300/300 [00:02<00:00, 111.68it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  6%|6         | 19/300 [00:00<00:01, 189.80it/s] 13%|#2        | 38/300 [00:00<00:02, 122.49it/s] 17%|#7        | 52/300 [00:00<00:02, 100.52it/s] 21%|##1       | 64/300 [00:00<00:02, 105.97it/s] 25%|##5       | 76/300 [00:00<00:02, 109.17it/s] 30%|###       | 90/300 [00:00<00:02, 95.22it/s]  34%|###4      | 102/300 [00:00<00:01, 101.13it/s] 38%|###7      | 113/300 [00:01<00:01, 102.87it/s] 42%|####2     | 127/300 [00:01<00:01, 112.87it/s] 46%|####6     | 139/300 [00:01<00:01, 113.78it/s] 50%|#####     | 151/300 [00:01<00:01, 90.58it/s]  54%|#####3    | 161/300 [00:01<00:01, 92.72it/s] 57%|#####6    | 171/300 [00:01<00:01, 94.04it/s] 62%|######1   | 185/300 [00:01<00:01, 106.02it/s] 66%|######5   | 197/300 [00:01<00:00, 108.55it/s] 70%|######9   | 209/300 [00:01<00:00, 111.18it/s] 74%|#######3  | 221/300 [00:02<00:00, 91.24it/s]  79%|#######9  | 237/300 [00:02<00:00, 107.98it/s] 83%|########2 | 249/300 [00:02<00:00, 110.69it/s] 87%|########7 | 261/300 [00:02<00:00, 89.94it/s]  91%|######### | 272/300 [00:02<00:00, 91.19it/s] 94%|#########3| 282/300 [00:02<00:00, 91.09it/s] 97%|#########7| 292/300 [00:02<00:00, 92.03it/s]100%|##########| 300/300 [00:02<00:00, 100.01it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:02, 109.26it/s] 13%|#3        | 40/300 [00:00<00:02, 112.50it/s] 18%|#8        | 54/300 [00:00<00:02, 121.31it/s] 23%|##3       | 70/300 [00:00<00:02, 104.76it/s] 28%|##7       | 83/300 [00:00<00:01, 111.14it/s] 33%|###3      | 100/300 [00:00<00:01, 103.78it/s] 38%|###8      | 115/300 [00:01<00:01, 114.82it/s] 43%|####3     | 130/300 [00:01<00:01, 102.03it/s] 48%|####8     | 145/300 [00:01<00:01, 112.99it/s] 53%|#####3    | 160/300 [00:01<00:01, 100.26it/s] 57%|#####6    | 171/300 [00:01<00:01, 99.36it/s]  61%|######    | 182/300 [00:01<00:01, 97.08it/s] 64%|######4   | 193/300 [00:01<00:01, 95.52it/s] 68%|######7   | 203/300 [00:01<00:01, 94.35it/s] 71%|#######1  | 213/300 [00:02<00:00, 94.92it/s] 76%|#######5  | 227/300 [00:02<00:00, 106.62it/s] 80%|########  | 240/300 [00:02<00:00, 91.75it/s]  87%|########6 | 260/300 [00:02<00:00, 98.67it/s] 91%|#########1| 273/300 [00:02<00:00, 105.63it/s] 95%|#########4| 284/300 [00:02<00:00, 106.49it/s]100%|##########| 300/300 [00:02<00:00, 99.74it/s] 100%|##########| 300/300 [00:02<00:00, 102.88it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:02, 112.06it/s] 11%|#1        | 34/300 [00:00<00:02, 124.08it/s] 16%|#5        | 47/300 [00:00<00:02, 124.03it/s] 20%|##        | 60/300 [00:00<00:02, 93.83it/s]  24%|##3       | 71/300 [00:00<00:02, 96.56it/s] 27%|##7       | 82/300 [00:00<00:02, 98.61it/s] 31%|###1      | 93/300 [00:00<00:02, 100.93it/s] 35%|###4      | 104/300 [00:01<00:01, 101.29it/s] 38%|###8      | 115/300 [00:01<00:01, 101.47it/s] 42%|####2     | 126/300 [00:01<00:01, 102.04it/s] 46%|####5     | 137/300 [00:01<00:01, 102.04it/s] 49%|####9     | 148/300 [00:01<00:01, 103.44it/s] 53%|#####3    | 159/300 [00:01<00:01, 104.46it/s] 57%|#####6    | 170/300 [00:01<00:01, 82.75it/s]  62%|######2   | 187/300 [00:01<00:01, 103.91it/s] 67%|######6   | 200/300 [00:02<00:01, 92.19it/s]  73%|#######3  | 219/300 [00:02<00:00, 114.97it/s] 77%|#######7  | 232/300 [00:02<00:00, 98.37it/s]  83%|########3 | 250/300 [00:02<00:00, 99.71it/s] 90%|######### | 270/300 [00:02<00:00, 103.43it/s] 96%|#########6| 289/300 [00:02<00:00, 121.45it/s]100%|##########| 300/300 [00:02<00:00, 102.59it/s]
+Running XAI for shufflenet_v2...
+  0%|          | 0/300 [00:00<?, ?it/s]  5%|5         | 15/300 [00:00<00:01, 149.80it/s] 12%|#2        | 36/300 [00:00<00:01, 184.31it/s] 20%|##        | 60/300 [00:00<00:01, 182.47it/s] 30%|###       | 90/300 [00:00<00:01, 200.26it/s] 40%|####      | 120/300 [00:00<00:00, 204.78it/s] 49%|####9     | 148/300 [00:00<00:00, 225.98it/s] 57%|#####6    | 171/300 [00:00<00:00, 206.70it/s] 66%|######6   | 198/300 [00:00<00:00, 223.87it/s] 74%|#######3  | 221/300 [00:01<00:00, 205.36it/s] 83%|########2 | 249/300 [00:01<00:00, 224.96it/s] 91%|#########1| 273/300 [00:01<00:00, 208.86it/s] 99%|#########8| 296/300 [00:01<00:00, 214.34it/s]100%|##########| 300/300 [00:01<00:00, 206.22it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:01, 189.82it/s] 13%|#3        | 40/300 [00:00<00:01, 189.33it/s] 20%|##        | 60/300 [00:00<00:01, 182.88it/s] 27%|##6       | 80/300 [00:00<00:01, 187.51it/s] 33%|###3      | 100/300 [00:00<00:01, 187.64it/s] 40%|####      | 120/300 [00:00<00:00, 184.09it/s] 47%|####6     | 140/300 [00:00<00:00, 186.69it/s] 54%|#####3    | 161/300 [00:00<00:00, 193.67it/s] 60%|######    | 181/300 [00:00<00:00, 192.75it/s] 67%|######7   | 201/300 [00:01<00:00, 191.62it/s] 74%|#######3  | 221/300 [00:01<00:00, 188.59it/s] 80%|########  | 240/300 [00:01<00:00, 182.88it/s] 87%|########6 | 260/300 [00:01<00:00, 181.75it/s] 93%|#########3| 280/300 [00:01<00:00, 181.55it/s]100%|##########| 300/300 [00:01<00:00, 176.60it/s]100%|##########| 300/300 [00:01<00:00, 184.56it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:01, 180.77it/s] 13%|#3        | 40/300 [00:00<00:01, 173.56it/s] 20%|##        | 60/300 [00:00<00:01, 174.59it/s] 27%|##6       | 80/300 [00:00<00:01, 176.78it/s] 33%|###3      | 100/300 [00:00<00:01, 176.48it/s] 40%|####      | 120/300 [00:00<00:01, 179.81it/s] 47%|####6     | 140/300 [00:00<00:00, 177.55it/s] 53%|#####3    | 160/300 [00:00<00:00, 175.05it/s] 60%|######    | 180/300 [00:01<00:00, 176.96it/s] 67%|######6   | 200/300 [00:01<00:00, 175.01it/s] 73%|#######3  | 220/300 [00:01<00:00, 177.52it/s] 80%|########  | 240/300 [00:01<00:00, 178.72it/s] 87%|########6 | 260/300 [00:01<00:00, 182.03it/s] 93%|#########3| 280/300 [00:01<00:00, 179.39it/s]100%|##########| 300/300 [00:01<00:00, 177.97it/s]100%|##########| 300/300 [00:01<00:00, 177.56it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:01, 188.01it/s] 13%|#3        | 40/300 [00:00<00:01, 187.41it/s] 20%|##        | 60/300 [00:00<00:01, 181.99it/s] 27%|##6       | 80/300 [00:00<00:01, 180.75it/s] 33%|###3      | 100/300 [00:00<00:01, 184.69it/s] 40%|####      | 120/300 [00:00<00:01, 175.69it/s] 47%|####6     | 140/300 [00:00<00:00, 170.83it/s] 53%|#####3    | 160/300 [00:00<00:00, 175.09it/s] 60%|######    | 180/300 [00:01<00:00, 178.12it/s] 67%|######6   | 200/300 [00:01<00:00, 174.59it/s] 73%|#######3  | 220/300 [00:01<00:00, 178.90it/s] 80%|########  | 240/300 [00:01<00:00, 174.67it/s] 87%|########6 | 260/300 [00:01<00:00, 177.08it/s] 93%|#########3| 280/300 [00:01<00:00, 177.39it/s]100%|##########| 300/300 [00:01<00:00, 179.14it/s]100%|##########| 300/300 [00:01<00:00, 178.11it/s]
+  0%|          | 0/300 [00:00<?, ?it/s]  7%|6         | 20/300 [00:00<00:01, 184.09it/s] 13%|#3        | 40/300 [00:00<00:01, 180.28it/s] 20%|##        | 60/300 [00:00<00:01, 176.48it/s] 27%|##6       | 80/300 [00:00<00:01, 176.71it/s] 33%|###3      | 100/300 [00:00<00:01, 175.62it/s] 40%|####      | 120/300 [00:00<00:01, 176.14it/s] 47%|####6     | 140/300 [00:00<00:00, 177.40it/s] 53%|#####3    | 160/300 [00:00<00:00, 176.77it/s] 60%|######    | 180/300 [00:01<00:00, 176.06it/s] 67%|######6   | 200/300 [00:01<00:00, 174.91it/s] 73%|#######3  | 220/300 [00:01<00:00, 174.35it/s] 80%|########  | 240/300 [00:01<00:00, 176.44it/s] 87%|########6 | 260/300 [00:01<00:00, 175.86it/s] 93%|#########3| 280/300 [00:01<00:00, 179.38it/s]100%|##########| 300/300 [00:01<00:00, 178.02it/s]100%|##########| 300/300 [00:01<00:00, 176.95it/s]
+
+=== Generating report ===
+Report written to C:\Users\ACER\PycharmProjects\crop-disease-xai\reports\comparison_report.md

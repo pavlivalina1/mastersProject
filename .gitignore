@@ -1,0 +1,12 @@
+data/raw/
+data/processed/
+experiments/results/
+*.pt
+*.pth
+__pycache__/
+*.pyc
+.venv/
+venv/
+~$*.doc*
+~$*.xls*
+~$*.ppt*
