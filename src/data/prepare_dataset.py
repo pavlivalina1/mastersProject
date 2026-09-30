@@ -6,7 +6,9 @@ from src.config import (
     CLASS_LIST_PATH, DATA_PROCESSED_DIR, DOMAIN_ADAPT_VAL_RATIO, IMAGES_PER_CLASS,
     MANIFEST_JOINT_TRAIN, MANIFEST_JOINT_VAL, MANIFEST_OOD, MANIFEST_OOD_TEST,
     MANIFEST_OOD_TRAIN, MANIFEST_OOD_VAL, MANIFEST_TEST, MANIFEST_TRAIN,
-    MANIFEST_VAL, PLANTDOC_RAW_DIR, PLANTVILLAGE_RAW_DIR, SEED, SPLIT_RATIOS,
+    MANIFEST_VAL, PLANTDOC_OVERSAMPLE_FACTOR, PLANTDOC_RAW_DIR,
+    PLANTVILLAGE_RAW_DIR, PLANTVILLAGE_SEGMENTED_RAW_DIR, SEED, SPLIT_RATIOS,
+    USE_SEGMENTED_PLANTVILLAGE_AUGMENTATION,
 )
 from src.utils import save_json
 
@@ -169,6 +171,39 @@ def _read_manifest_rows(path: Path):
         return [(row["filepath"], row["label"], int(row["label_idx"])) for row in reader]
 
 
+def _segmented_lookup_for_class(class_name: str) -> dict:
+    class_dir = PLANTVILLAGE_SEGMENTED_RAW_DIR / class_name
+    lookup = {}
+    if not class_dir.exists():
+        return lookup
+    for f in class_dir.iterdir():
+        if f.suffix not in VALID_EXTENSIONS:
+            continue
+        stem = f.stem
+        if stem.endswith("_final_masked"):
+            stem = stem[: -len("_final_masked")]
+        lookup[stem] = str(f)
+    return lookup
+
+
+def build_segmented_plantvillage_rows(pv_train_rows):
+    rows = []
+    lookup_cache = {}
+    missing = 0
+    for filepath, class_name, idx in pv_train_rows:
+        if class_name not in lookup_cache:
+            lookup_cache[class_name] = _segmented_lookup_for_class(class_name)
+        stem = Path(filepath).stem
+        segmented_path = lookup_cache[class_name].get(stem)
+        if segmented_path is None:
+            missing += 1
+            continue
+        rows.append((segmented_path, class_name, idx))
+    if missing:
+        print(f"Warning: {missing} PlantVillage train images had no segmented counterpart")
+    return rows
+
+
 def build_joint_manifests():
     if not MANIFEST_OOD_TRAIN.exists():
         print("No PlantDoc OOD-train manifest yet, skipping joint manifests")
@@ -179,10 +214,21 @@ def build_joint_manifests():
     pd_train = _read_manifest_rows(MANIFEST_OOD_TRAIN)
     pd_val = _read_manifest_rows(MANIFEST_OOD_VAL)
 
-    write_manifest(MANIFEST_JOINT_TRAIN, pv_train + pd_train)
+    joint_train = list(pv_train)
+
+    segmented_rows = []
+    if USE_SEGMENTED_PLANTVILLAGE_AUGMENTATION:
+        segmented_rows = build_segmented_plantvillage_rows(pv_train)
+        joint_train += segmented_rows
+
+    oversampled_pd_train = pd_train * PLANTDOC_OVERSAMPLE_FACTOR
+    joint_train += oversampled_pd_train
+
+    write_manifest(MANIFEST_JOINT_TRAIN, joint_train)
     write_manifest(MANIFEST_JOINT_VAL, pv_val + pd_val)
-    print(f"Joint manifests: train={len(pv_train) + len(pd_train)} "
-          f"(PlantVillage {len(pv_train)} + PlantDoc {len(pd_train)}), "
+    print(f"Joint manifests: train={len(joint_train)} "
+          f"(PlantVillage-color {len(pv_train)} + PlantVillage-segmented {len(segmented_rows)} + "
+          f"PlantDoc x{PLANTDOC_OVERSAMPLE_FACTOR} {len(oversampled_pd_train)}), "
           f"val={len(pv_val) + len(pd_val)} (PlantVillage {len(pv_val)} + PlantDoc {len(pd_val)})")
 
 

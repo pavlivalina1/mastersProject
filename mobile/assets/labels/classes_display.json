@@ -1,0 +1,382 @@
+[
+  {
+    "id": 0,
+    "raw_label": "Apple___Apple_scab",
+    "species_en": "Apple",
+    "condition_en": "Apple scab",
+    "species_uk": "Яблуня",
+    "condition_uk": "Парша яблуні",
+    "healthy": false,
+    "care_tip_uk": "Видаліть і знищіть уражене опале листя восени; забезпечте провітрювання крони."
+  },
+  {
+    "id": 1,
+    "raw_label": "Apple___Black_rot",
+    "species_en": "Apple",
+    "condition_en": "Black rot",
+    "species_uk": "Яблуня",
+    "condition_uk": "Чорна гниль",
+    "healthy": false,
+    "care_tip_uk": "Обріжте й спаліть уражені гілки та муміфіковані плоди, уникайте пошкоджень кори."
+  },
+  {
+    "id": 2,
+    "raw_label": "Apple___Cedar_apple_rust",
+    "species_en": "Apple",
+    "condition_en": "Cedar apple rust",
+    "species_uk": "Яблуня",
+    "condition_uk": "Яблунево-ялівцева іржа",
+    "healthy": false,
+    "care_tip_uk": "За можливості приберіть поруч ялівець (проміжного хазяїна); обробляйте навесні під час набубнявіння бруньок."
+  },
+  {
+    "id": 3,
+    "raw_label": "Apple___healthy",
+    "species_en": "Apple",
+    "condition_en": "Healthy",
+    "species_uk": "Яблуня",
+    "condition_uk": "Здорова",
+    "healthy": true,
+    "care_tip_uk": "Рослина здорова — підтримуйте регулярний полив і провітрювання крони."
+  },
+  {
+    "id": 4,
+    "raw_label": "Blueberry___healthy",
+    "species_en": "Blueberry",
+    "condition_en": "Healthy",
+    "species_uk": "Чорниця",
+    "condition_uk": "Здорова",
+    "healthy": true,
+    "care_tip_uk": "Підтримуйте кислий, добре дренований ґрунт і помірний полив."
+  },
+  {
+    "id": 5,
+    "raw_label": "Cherry_(including_sour)___Powdery_mildew",
+    "species_en": "Cherry",
+    "condition_en": "Powdery mildew",
+    "species_uk": "Вишня/Черешня",
+    "condition_uk": "Борошниста роса",
+    "healthy": false,
+    "care_tip_uk": "Забезпечте циркуляцію повітря, обрізайте загущені пагони, не перегодовуйте азотом."
+  },
+  {
+    "id": 6,
+    "raw_label": "Cherry_(including_sour)___healthy",
+    "species_en": "Cherry",
+    "condition_en": "Healthy",
+    "species_uk": "Вишня/Черешня",
+    "condition_uk": "Здорова",
+    "healthy": true,
+    "care_tip_uk": "Рослина здорова — підтримуйте регулярну обрізку та полив за потреби."
+  },
+  {
+    "id": 7,
+    "raw_label": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+    "species_en": "Corn",
+    "condition_en": "Cercospora / gray leaf spot",
+    "species_uk": "Кукурудза",
+    "condition_uk": "Сіра плямистість листя (церкоспороз)",
+    "healthy": false,
+    "care_tip_uk": "Дотримуйтесь сівозміни та подрібнюйте рослинні рештки після збору врожаю."
+  },
+  {
+    "id": 8,
+    "raw_label": "Corn_(maize)___Common_rust_",
+    "species_en": "Corn",
+    "condition_en": "Common rust",
+    "species_uk": "Кукурудза",
+    "condition_uk": "Звичайна іржа",
+    "healthy": false,
+    "care_tip_uk": "Висівайте стійкі гібриди, уникайте загущених посівів для кращого провітрювання."
+  },
+  {
+    "id": 9,
+    "raw_label": "Corn_(maize)___Northern_Leaf_Blight",
+    "species_en": "Corn",
+    "condition_en": "Northern leaf blight",
+    "species_uk": "Кукурудза",
+    "condition_uk": "Північний гельмінтоспоріоз",
+    "healthy": false,
+    "care_tip_uk": "Заорюйте рослинні рештки та дотримуйтесь сівозміни з нехазяйними культурами."
+  },
+  {
+    "id": 10,
+    "raw_label": "Corn_(maize)___healthy",
+    "species_en": "Corn",
+    "condition_en": "Healthy",
+    "species_uk": "Кукурудза",
+    "condition_uk": "Здорова",
+    "healthy": true,
+    "care_tip_uk": "Рослина здорова — підтримуйте сівозміну для профілактики."
+  },
+  {
+    "id": 11,
+    "raw_label": "Grape___Black_rot",
+    "species_en": "Grape",
+    "condition_en": "Black rot",
+    "species_uk": "Виноград",
+    "condition_uk": "Чорна гниль",
+    "healthy": false,
+    "care_tip_uk": "Видаляйте муміфіковані ягоди й уражене листя, обрізайте кущ для кращої вентиляції."
+  },
+  {
+    "id": 12,
+    "raw_label": "Grape___Esca_(Black_Measles)",
+    "species_en": "Grape",
+    "condition_en": "Esca (black measles)",
+    "species_uk": "Виноград",
+    "condition_uk": "Еска (чорна кір)",
+    "healthy": false,
+    "care_tip_uk": "Уникайте великих обрізних ран у вологу погоду, видаляйте вражені рукави."
+  },
+  {
+    "id": 13,
+    "raw_label": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+    "species_en": "Grape",
+    "condition_en": "Leaf blight (Isariopsis)",
+    "species_uk": "Виноград",
+    "condition_uk": "Плямистість листя (ізаріопсис)",
+    "healthy": false,
+    "care_tip_uk": "Покращте провітрювання листя обрізкою, видаляйте уражене листя."
+  },
+  {
+    "id": 14,
+    "raw_label": "Grape___healthy",
+    "species_en": "Grape",
+    "condition_en": "Healthy",
+    "species_uk": "Виноград",
+    "condition_uk": "Здоровий",
+    "healthy": true,
+    "care_tip_uk": "Рослина здорова — підтримуйте регулярну обрізку."
+  },
+  {
+    "id": 15,
+    "raw_label": "Orange___Haunglongbing_(Citrus_greening)",
+    "species_en": "Orange",
+    "condition_en": "Huanglongbing (citrus greening)",
+    "species_uk": "Апельсин",
+    "condition_uk": "Хуанглунбін (цитрусове позеленіння)",
+    "healthy": false,
+    "care_tip_uk": "Це карантинна хвороба — зверніться до фахівця для підтвердження; заражені дерева зазвичай видаляють, щоб зупинити поширення."
+  },
+  {
+    "id": 16,
+    "raw_label": "Peach___Bacterial_spot",
+    "species_en": "Peach",
+    "condition_en": "Bacterial spot",
+    "species_uk": "Персик",
+    "condition_uk": "Бактеріальна плямистість",
+    "healthy": false,
+    "care_tip_uk": "Обирайте стійкі сорти, уникайте поливу по листю, який подовжує вологість поверхні."
+  },
+  {
+    "id": 17,
+    "raw_label": "Peach___healthy",
+    "species_en": "Peach",
+    "condition_en": "Healthy",
+    "species_uk": "Персик",
+    "condition_uk": "Здоровий",
+    "healthy": true,
+    "care_tip_uk": "Рослина здорова — підтримуйте регулярний догляд."
+  },
+  {
+    "id": 18,
+    "raw_label": "Pepper,_bell___Bacterial_spot",
+    "species_en": "Bell pepper",
+    "condition_en": "Bacterial spot",
+    "species_uk": "Перець солодкий",
+    "condition_uk": "Бактеріальна плямистість",
+    "healthy": false,
+    "care_tip_uk": "Використовуйте здорове насіння/розсаду, не працюйте з мокрим листям."
+  },
+  {
+    "id": 19,
+    "raw_label": "Pepper,_bell___healthy",
+    "species_en": "Bell pepper",
+    "condition_en": "Healthy",
+    "species_uk": "Перець солодкий",
+    "condition_uk": "Здоровий",
+    "healthy": true,
+    "care_tip_uk": "Рослина здорова — поливайте під корінь, уникаючи листя."
+  },
+  {
+    "id": 20,
+    "raw_label": "Potato___Early_blight",
+    "species_en": "Potato",
+    "condition_en": "Early blight",
+    "species_uk": "Картопля",
+    "condition_uk": "Рання плямистість (альтернаріоз)",
+    "healthy": false,
+    "care_tip_uk": "Дотримуйтесь сівозміни, мульчуйте ґрунт, уникайте поливу по листю."
+  },
+  {
+    "id": 21,
+    "raw_label": "Potato___Late_blight",
+    "species_en": "Potato",
+    "condition_en": "Late blight",
+    "species_uk": "Картопля",
+    "condition_uk": "Фітофтороз",
+    "healthy": false,
+    "care_tip_uk": "Швидко видаліть уражені рослини, уникайте поливу ввечері."
+  },
+  {
+    "id": 22,
+    "raw_label": "Potato___healthy",
+    "species_en": "Potato",
+    "condition_en": "Healthy",
+    "species_uk": "Картопля",
+    "condition_uk": "Здорова",
+    "healthy": true,
+    "care_tip_uk": "Рослина здорова — дотримуйтесь сівозміни."
+  },
+  {
+    "id": 23,
+    "raw_label": "Raspberry___healthy",
+    "species_en": "Raspberry",
+    "condition_en": "Healthy",
+    "species_uk": "Малина",
+    "condition_uk": "Здорова",
+    "healthy": true,
+    "care_tip_uk": "Рослина здорова — вирізайте старі пагони для кращого провітрювання."
+  },
+  {
+    "id": 24,
+    "raw_label": "Soybean___healthy",
+    "species_en": "Soybean",
+    "condition_en": "Healthy",
+    "species_uk": "Соя",
+    "condition_uk": "Здорова",
+    "healthy": true,
+    "care_tip_uk": "Рослина здорова — контролюйте бур'яни та вологість ґрунту."
+  },
+  {
+    "id": 25,
+    "raw_label": "Squash___Powdery_mildew",
+    "species_en": "Squash",
+    "condition_en": "Powdery mildew",
+    "species_uk": "Кабачок/Гарбуз",
+    "condition_uk": "Борошниста роса",
+    "healthy": false,
+    "care_tip_uk": "Забезпечте достатню відстань між рослинами, поливайте під корінь, не по листю."
+  },
+  {
+    "id": 26,
+    "raw_label": "Strawberry___Leaf_scorch",
+    "species_en": "Strawberry",
+    "condition_en": "Leaf scorch",
+    "species_uk": "Полуниця",
+    "condition_uk": "Опік листя",
+    "healthy": false,
+    "care_tip_uk": "Видаляйте старе уражене листя після плодоношення, уникайте загущення грядки."
+  },
+  {
+    "id": 27,
+    "raw_label": "Strawberry___healthy",
+    "species_en": "Strawberry",
+    "condition_en": "Healthy",
+    "species_uk": "Полуниця",
+    "condition_uk": "Здорова",
+    "healthy": true,
+    "care_tip_uk": "Рослина здорова — підтримуйте мульчування та помірний полив."
+  },
+  {
+    "id": 28,
+    "raw_label": "Tomato___Bacterial_spot",
+    "species_en": "Tomato",
+    "condition_en": "Bacterial spot",
+    "species_uk": "Томат",
+    "condition_uk": "Бактеріальна плямистість",
+    "healthy": false,
+    "care_tip_uk": "Не працюйте з мокрим листям, дезінфікуйте інструменти між рослинами."
+  },
+  {
+    "id": 29,
+    "raw_label": "Tomato___Early_blight",
+    "species_en": "Tomato",
+    "condition_en": "Early blight",
+    "species_uk": "Томат",
+    "condition_uk": "Рання плямистість (альтернаріоз)",
+    "healthy": false,
+    "care_tip_uk": "Мульчуйте ґрунт, видаляйте нижнє уражене листя, поливайте під корінь."
+  },
+  {
+    "id": 30,
+    "raw_label": "Tomato___Late_blight",
+    "species_en": "Tomato",
+    "condition_en": "Late blight",
+    "species_uk": "Томат",
+    "condition_uk": "Фітофтороз",
+    "healthy": false,
+    "care_tip_uk": "Швидко видаліть уражені рослини — хвороба поширюється дуже швидко у вологу погоду."
+  },
+  {
+    "id": 31,
+    "raw_label": "Tomato___Leaf_Mold",
+    "species_en": "Tomato",
+    "condition_en": "Leaf mold",
+    "species_uk": "Томат",
+    "condition_uk": "Бура плямистість листя (кладоспоріоз)",
+    "healthy": false,
+    "care_tip_uk": "Знизьте вологість повітря в теплиці/під укриттям, покращте вентиляцію."
+  },
+  {
+    "id": 32,
+    "raw_label": "Tomato___Septoria_leaf_spot",
+    "species_en": "Tomato",
+    "condition_en": "Septoria leaf spot",
+    "species_uk": "Томат",
+    "condition_uk": "Септоріоз (біла плямистість)",
+    "healthy": false,
+    "care_tip_uk": "Видаляйте нижнє уражене листя, мульчуйте, щоб зменшити бризки ґрунту на листя."
+  },
+  {
+    "id": 33,
+    "raw_label": "Tomato___Spider_mites Two-spotted_spider_mite",
+    "species_en": "Tomato",
+    "condition_en": "Two-spotted spider mite",
+    "species_uk": "Томат",
+    "condition_uk": "Павутинний кліщ",
+    "healthy": false,
+    "care_tip_uk": "Підвищіть вологість повітря та обприскуйте листя водою — кліщі люблять сухість."
+  },
+  {
+    "id": 34,
+    "raw_label": "Tomato___Target_Spot",
+    "species_en": "Tomato",
+    "condition_en": "Target spot",
+    "species_uk": "Томат",
+    "condition_uk": "Кільцева плямистість",
+    "healthy": false,
+    "care_tip_uk": "Покращте вентиляцію між рослинами, видаляйте нижнє уражене листя."
+  },
+  {
+    "id": 35,
+    "raw_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+    "species_en": "Tomato",
+    "condition_en": "Tomato yellow leaf curl virus",
+    "species_uk": "Томат",
+    "condition_uk": "Вірус жовтого закручування листя",
+    "healthy": false,
+    "care_tip_uk": "Переноситься білокрилкою — контролюйте цього шкідника, видаляйте уражені рослини."
+  },
+  {
+    "id": 36,
+    "raw_label": "Tomato___Tomato_mosaic_virus",
+    "species_en": "Tomato",
+    "condition_en": "Tomato mosaic virus",
+    "species_uk": "Томат",
+    "condition_uk": "Вірус мозаїки томата",
+    "healthy": false,
+    "care_tip_uk": "Мийте руки й дезінфікуйте інструменти між рослинами — вірус легко передається контактно."
+  },
+  {
+    "id": 37,
+    "raw_label": "Tomato___healthy",
+    "species_en": "Tomato",
+    "condition_en": "Healthy",
+    "species_uk": "Томат",
+    "condition_uk": "Здоровий",
+    "healthy": true,
+    "care_tip_uk": "Рослина здорова — поливайте під корінь, уникаючи листя."
+  }
+]

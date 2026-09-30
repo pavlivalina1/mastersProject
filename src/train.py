@@ -38,7 +38,7 @@ def run_epoch(model, loader, criterion, optimizer, device, train: bool):
 def train_model(model_name: str, manifest_train=MANIFEST_TRAIN, manifest_val=MANIFEST_VAL,
                  max_epochs: int = MAX_EPOCHS, patience: int = EARLY_STOPPING_PATIENCE,
                  tag: str = "", learning_rate: float = LEARNING_RATE,
-                 init_checkpoint=None) -> dict:
+                 init_checkpoint=None, unfreeze_all: bool = False) -> dict:
     seed_everything(SEED)
     device = get_device()
     classes = load_json(CLASS_LIST_PATH)
@@ -52,6 +52,13 @@ def train_model(model_name: str, manifest_train=MANIFEST_TRAIN, manifest_val=MAN
     model = build_model(model_name, num_classes).to(device)
     if init_checkpoint is not None:
         model.load_state_dict(torch.load(init_checkpoint, map_location=device))
+    if unfreeze_all:
+        # Domain adaptation benefits from adapting low-level filters too, not
+        # just the last few blocks used for plain transfer learning — the
+        # domain gap (studio photos vs. real-world field photos) shows up in
+        # low-level texture/color statistics, not just high-level features.
+        for param in model.parameters():
+            param.requires_grad = True
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(trainable_parameters(model), lr=learning_rate, weight_decay=WEIGHT_DECAY)
 

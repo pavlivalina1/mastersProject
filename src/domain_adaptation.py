@@ -28,6 +28,7 @@ def adapt_model(model_name: str) -> dict:
         tag="da",
         learning_rate=DOMAIN_ADAPT_LEARNING_RATE,
         init_checkpoint=source_checkpoint,
+        unfreeze_all=True,
     )
     return result
 
